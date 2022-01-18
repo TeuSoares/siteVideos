@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Padrão so Site */
+body{
+    font-family: Arial, Helvetica, verdana, sans-serif; 
+    color: #000;
+    background:linear-gradient(0deg, rgba(0,0,0,5),rgb(49, 49, 49));
+}
+
+header{
+    width: 100%;                      
+    margin: 0 auto;              
+    height: 80px;                      
+    display: flex;                      
+    justify-content: space-between;     
+    align-items: center;    
+    background-color: rgb(17, 17, 17);            
+}
+.banner{
+    width: 1300px;
+    margin: 0 auto;
+    border: 1px solid rgb(27, 27, 27);
+}
+/****************************/
+
+/* Formatando Menu */
+nav{
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto
+}
+.menu1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+.menu1 a:hover{
+    padding: 17px 15px;
+    color: rgb(211, 167, 21);
+}
+.menu2 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+.menu2 a:hover{
+    padding: 17px 15px;
+    color: rgb(211, 167, 21);
+}
+/****************************/
+
+.banner{
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+}
+.background-fundo img{
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+/* Formatando Article */
+article{
+    width: 1300px;
+    margin: 0px auto;
+    grid-area: conteudo;
+    padding: 30px 30px 30px 0px;
+}
+section{
+    display: grid;                  /* define o layout como grid */
+    justify-content: center;
+}
+.box{
+    width: 206px;
+    background-color: #6e4343;
+    border: 2px solid #000;
+    height: 170px;
+}
+.boxprincipal{   
+    width: 1300px;
+    margin: 0px auto;          
+    display: grid;
+    grid-template-areas:
+    "area1 area2 area3 area4 area5 area6";
+    grid-template-columns: 218px 218px 218px 218px 218px 218px;
+    justify-content: flex-start;   
+}
+.box1{
+    grid-area: area1;
+}
+.box2{
+    grid-area: area2;
+}
+.box3{
+    grid-area: area3;
+}
+.box4{
+    grid-area: area4;
+}
+.box5{
+    grid-area: area5;
+}
+.box6{
+    background-color: #353535;
+    grid-area: area6;
+}
+h1{
+    color: #fff;
+    font-size: 35px;
+    margin: 55px 0px 30px; 
+    text-align: center;
+}
+.box6-P{
+    text-align: center;
+    font-size: 22px;
+    margin: 70px 0px;
+}
+.box6-P a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: none;
+}
+.box6-P a:hover{
+    color: #a8a7a7;
+}
+.boxH2{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    margin: 8px 8px 0px 0px;
+    border-radius: 5px;
+}
+.boxH2 a{
+    border: none;
+    text-decoration: none;
+}
+.container-video{
+    width: 1300px;
+    height: 500px;
+    margin: 0px auto;          
+    display: grid;
+    grid-template-areas:
+    "areaVideo areaVideo areaVideo areaVideo areaVideo areaVideo";
+    grid-template-columns: 100%;
+}
+.boxVideo{
+    grid-area: areaVideo;
+    border:2px solid #fafafa;
+}
+ .img-Id{
+    width: 206px;
+    height: 170px;
+    
+} 
+/****************************/
+
+/* ADD VIDEO */
+.pagADM{
+    background: none;
+    background-color: #252525;
+}
+.painelControl{
+    text-align: center;
+}
+.campo{
+    width: 400px;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+    /*margin: 0px 0px 6px 6px; */
+}
+.campo2{
+    width: 200px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.botao{
+    border-style: none;
+    background-color: #bb2626;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.botao:hover{
+    background-color: #9e3535;
+}
+.adm-P{
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.tabela2{
+    width: 1300px;
+    border-collapse: collapse;        /*tirar o espaçamento entre células*/
+    text-align: center;
+    margin: 15px 0px;
+    border: 2px solid #000;
+ }
+ .tabela2 th{
+    padding: 10px;
+    background-color: #9e3535;
+    color: #fff;
+    border: 1px solid #000;
+ } 
+ .tabela2 td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+ }
+ .tabela2 tr:nth-child(odd){                 /* ood=impar, even=par*/
+    background-color: #7c7a7a;
+ }
+ .tabela2 tr:nth-child(even){                 /* ood=impar, even=par*/
+    background-color: #e2e2e2;
+ }
+ .fa-edit{
+     color: #000000;
+ }
+ .fa-trash-alt{
+    color: #000000;
+ }
+ .fa-edit:hover{
+     color: rgb(153, 153, 153);
+ }
+ .fa-trash-alt:hover{
+    color: rgb(153, 153, 153);
+}
+
+/* Lista de Vídeos */
+.sidebar{
+    display: grid;        
+    grid-template-areas: "conteudo lateral" "rodape rodape";
+    grid-template-columns: 700px 600px;
+    justify-content: center;
+}
+.conteudo_lateral{
+    display: flex;
+    flex-direction: row-reverse;
+}
+aside{
+    width: 200px;
+    grid-area: lateral;
+    /*border: 1px solid #fff; */
+    margin: 30px 0px;
+    padding: 20px;
+    height: 500px;
+}
+aside > h2{
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #bb2626;
+    width: 220px; 
+    text-align: center;
+    padding: 6px 0px;
+}
+aside h2 i{
+    font-size: 15px;
+}
+aside ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+aside ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+aside ul li a:hover{
+    text-decoration: underline;
+}
+.articleLista{
+    grid-area: conteudo;
+    padding: 30px 30px 30px 0px;
+}
+.articleLista > h2{
+    color: #fff;
+    font-size: 35px;
+    margin: 0px 0px 30px; 
+    text-align: left;
+}
+.boxTopo{
+    background-color: #6e4343;
+    padding: 100px;
+    border: 1px solid #000; 
+    padding: 0px 0px 400px 0px;
+}
+.boxprincipalTopo{
+    width: 1300px;
+    display: grid;
+    grid-template-areas:
+    "area1";
+    grid-template-columns: 100%;
+    justify-content: center;
+    height: 400px ; 
+    margin: 0 auto;
+} 
+.box1Topo{
+    grid-area: area1;
+    background-image: url(imagens/Banner_topo.jpg)
+}
+.boxli{
+    width: 206px;
+    background-color: #6e4343;
+    border: 2px solid #000;
+    height: 170px;
+}
+.boxLista{   
+    width: 1300px;
+    margin: 0px auto;          
+    display: grid;
+    grid-template-areas:
+    "area1 area2 area3 area4" "area5 area6 area7 area8";
+    grid-template-columns: 218px 218px 218px;
+    justify-content: flex-start;   
+    margin-top: 20px;
+}
+.boxLi1{
+    grid-area: area1;
+    margin: 5px 0px;
+}
+.boxLi2{
+    grid-area: area2;
+    margin: 5px 0px;
+}
+.boxLi3{
+    grid-area: area3;
+    margin: 5px 0px;
+}
+.boxLi4{
+    grid-area: area4;
+    margin: 5px 0px;
+}
+.boxLi5{
+    grid-area: area5;
+    margin: 5px 0px;
+}
+.boxLi6{
+    grid-area: area6;
+    margin: 5px 0px;
+}
+.boxLi7{
+    grid-area: area7;
+    margin: 5px 0px;
+}
+.boxLi8{
+    grid-area: area8;
+    margin: 5px 0px;
+}
+.generoMusical{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #353535;
+    border: 1px solid #fff;
+    padding: 50px 45px;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 18px; 
+    border-radius: 10px;
+}
+.generoMusical:hover{
+    background-color: #a0a0a0;
+}
+
+/* Animação Lista Vídeos */
+.fotosMusic{
+    height: auto;
+    margin: 0 auto; 
+ }
+ .fotosMusic .box-image{
+    display: flex;
+    justify-content: center;   
+ }
+ .box-image .thumb{
+    height: auto;
+    max-width: 60%;
+    margin: 10px 20px 0px 0px;
+    border-radius: 4px; 
+    position: relative;
+    padding: 0px 20px 0 0;
+ }
+ 
+ .thumb a img{
+    transform: scale(1.1);
+    transition: transform .5s, opacity 1s;
+    border: 2px solid #000;
+ }
+
+ .thumb a img:hover{
+    transform: scale(1.2);
+ }
+ /************************/
